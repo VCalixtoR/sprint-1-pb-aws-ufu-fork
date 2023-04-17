@@ -15,10 +15,10 @@ Passo a passo para iniciar o projeto:
 1. Crie a branch para o seu grupo e efetue o clone.
 2. Crie um arquivo para colocar seu programa JavaScript (.js).
 3. Desenvolva o código, que deverá conter as seguintes características:
-  - solicite ao usuário que insira um número;
-  - verifique se o número inserido é maior ou menor que o valor esperado;
-  - caso seja o valor correto, imprima na tela uma mensagem de parabéns;
-  - caso contrário, indique ao usuário se o próximo valor deve ser maior, muito maior, menor ou muito menor que o informado.
+    - solicite ao usuário que insira um número;
+    - verifique se o número inserido é maior ou menor que o valor esperado;
+    - caso seja o valor correto, imprima na tela uma mensagem de parabéns;
+    - caso contrário, indique ao usuário se o próximo valor deve ser maior, muito maior, menor ou muito menor que o informado.
 4. Após testado na máquina local, suba os arquivos de código e o README no GitHub.
 5. Ao escrever o comentário do commit, utilize os Commits Semânticos: https://blog.geekhunter.com.br/o-que-e-commit-e-como-usar-commits-semanticos/ 
 
