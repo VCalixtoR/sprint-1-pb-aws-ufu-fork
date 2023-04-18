@@ -12,7 +12,8 @@ Faça um sistema em JavaScript para construção de um sistema de verificação 
 
 Passo a passo para iniciar o projeto:
 
-1. Crie a branch para o seu grupo e efetue o clone.
+1. Clonar o repositório.
+2. Crie a branch para subir seu código.
 2. Crie um arquivo para colocar seu programa JavaScript (.js).
 3. Desenvolva o código, que deverá conter as seguintes características:
     - solicite ao usuário que insira um número;
