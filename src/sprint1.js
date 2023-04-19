@@ -5,14 +5,13 @@ let num;    // Declaração da variável num, que será o número digitado pelo 
 console.log("Esse é um sistema de verificacao de PIN.");
 console.log("Seu objetivo é adivinhar o PIN de 4 algarismos sem zeros a esquerda.\n")
 
-
 while (1) {
     // Requisição para que o usuário entre com um PIN
     num = prompt("PIN: ");
 
     // Verifica se o valor digitado não é um número
     if (isNaN(num)) {
-        console.log("\nERRO: O valor digitado nao e um numero!\n");
+        console.log("\nERRO: O valor digitado nao eh um numero!\n");
         continue;
     }
 
