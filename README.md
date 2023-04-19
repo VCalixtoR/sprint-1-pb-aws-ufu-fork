@@ -14,13 +14,15 @@ Mensagens como "Muito maior/menor", "Menor/Maior", "Um pouco maior/menor" será 
 ***
 ## Execução (Código Fonte)
     1. Será solicitado que o usuário digite um número positivo de quatro algarismos.
-    2. Caso o usuário entre com um número inválido, será mostrado a mensagem de erro "O numero deve ter 4 algarismos!" e ele deverá escolher novamente.
+    2. O programa irá fazer a verificação do número digitado.
+      - Caso o usuário entre com algum valor que não seja numérico, será mostrado uma mensagem de erro "ERRO: O valor digitado nao eh um numero!"
+      - Caso o usuário entre com um número inválido, será mostrado uma mensagem de erro "O numero deve ter 4 algarismos!" e ele deverá escolher novamente.
     3. O valor digitado pelo usuário será armazenado na variável "num".
     4. Será feito o cálculo da diferença entre o PIN e o número digitado e o resultado é armazenado na variável "dif".
     5. O programa irá dar uma dica se o número é maior ou menor que o PIN.
-        - Se a diferença entre o PIN e o número digitado for maior ou igual a 1000, então a dica será "Muito maior/menor"
-        - Se a diferença for menor que 1000 e maior que 100, então a dica será "Maior/menor"
-        - Se for menor ou igual a 100, então a dica será "Um pouquinho maior/menor"
+        - Se a diferença entre o PIN e o número digitado for maior ou igual a 1000, então a dica será "Muito maior/menor".
+        - Se a diferença for menor que 1000 e maior que 100, então a dica será "Maior/menor".
+        - Se for menor ou igual a 100, então a dica será "Um pouquinho maior/menor".
     6. Isso se repetirá até que o usuário acerte o PIN.
     
 ***
