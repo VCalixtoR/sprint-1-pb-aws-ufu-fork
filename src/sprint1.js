@@ -10,19 +10,26 @@ while (1) {
     // Requisição para que o usuário entre com um PIN
     num = prompt("PIN: ");
 
+    // Verifica se o valor digitado não é um número
+    if (isNaN(num)) {
+        console.log("\nERRO: O valor digitado nao e um numero!\n");
+        continue;
+    }
+
     // Faz a verficação se o usuário digitou o número corretamente
     if (num < 1000 || num > 9999) {
         console.log("\nERRO: O numero deve ter 4 algarismos!\n");
         continue;
     }
 
-    let dif = pin - num;        // Calcula a diferença entre o PIN e o número digitado e atribui na variável dif
+    let dif = pin - num;    // Calcula a diferença entre o PIN e o número digitado e atribui na variável dif
 
-    if (dif == 0) { // Se a diferença for 0, então quer dizer que os números são iguais e o usuário acertou
-        console.log("Parabéns, voce acertou!!!");
+    if (dif == 0) {
+        console.log("Parabéns, voce acertou!!!");   // Se a diferença for 0, então quer dizer que os números são iguais e o usuário acertou
         break;  // sai do loop
     }
-    else if (dif > 0) {     // Se o numero digitado for menor que o PIN, entra nessa condição
+    // Se o numero digitado for menor que o PIN, entra nessa condição
+    else if (dif > 0) {
 
         if (dif >= 1000) {  // intervalo de 1000 até 9999
             console.log("Muito maior...");
@@ -30,11 +37,12 @@ while (1) {
         else if (dif < 1000 && dif > 100) {    // intervalo de 999 até 100
             console.log("Maior...");
         }
-        else if (dif <= 100) {   // intervalo de 100 até 1
+        else {   // intervalo de 100 até 1
             console.log("Um pouquinho maior...");
         }
     }
-    else if (dif < 0) {     // Se o numero digitado for maior que o PIN, entra nessa condição
+    // Se o numero digitado for maior que o PIN, entra nessa condição
+    else if (dif < 0) {
 
         if (dif <= -1000) { // intervalo de -1000 até -8999
             console.log("Muito menor...");
@@ -42,7 +50,7 @@ while (1) {
         else if (dif >= -1000 && dif < -100) {  // intervalo de -999 até -100
             console.log("Menor...");
         }
-        else if (dif >= -100) { // intervalo de -100 até -1
+        else { // intervalo de -100 até -1
             console.log("Um pouquinho menor...");
         }
     }
