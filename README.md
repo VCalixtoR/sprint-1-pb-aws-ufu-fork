@@ -24,7 +24,11 @@ Mensagens como "Muito maior/menor", "Menor/Maior", "Um pouco maior/menor" será 
     6. Isso se repetirá até que o usuário acerte o PIN.
     
 ***
+## Autor
 
+  Guilherme Rimoldi Kameoka
+
+***
 ## Dificuldades encontradas
 
 Tive dificuldades em tratar números com zeros à esquerda caso o usuário entre com o valor 0001, por exemplo.
