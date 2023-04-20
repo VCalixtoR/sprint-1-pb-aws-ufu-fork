@@ -1,4 +1,4 @@
-let pin=getRandomPin(1000,9999);    
+let pin=5000;           //Valor do pin fixo para facilitar testes de funcionalidade    
 let acertou=false;                   
 
 console.log(`Pin sorteado aleatoriamente: ${pin}`);                    
