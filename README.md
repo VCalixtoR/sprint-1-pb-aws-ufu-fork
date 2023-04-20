@@ -1,20 +1,5 @@
 # Avaliação Sprint 1 - Programa de Bolsas Compass UOL / AWS e UFU
 
-Avaliação da primeira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
-
-***
-
-## Execução (Código Fonte)
-
-Faça um sistema em JavaScript para construção de um sistema de verificação de PIN (Personal Identification Number). O sistema contará com dicas se o usuário está colocando um número próximo, a maior ou menor que o correto.
-
-**Especificações**:
-
-Passo a passo para iniciar o projeto:
-
-1. Clone o repositório.
-2. Crie a branch para subir# Avaliação Sprint 1 - Programa de Bolsas Compass UOL / AWS e UFU
-
 ##### Projeto da primeira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
 
  Projeto realizado por Gabriel Couto de Freitas.
@@ -50,4 +35,10 @@ Após isso, entra no loop que pede para o usuário tentar adivinhar o PIN, regis
 
 Caso contrário, verifica, se a diferença for positiva, quer dizer que o usuário digitou um número menor que o PIN, e se for negativa, digitou um número maior que o PIN.
 Se essa diferença, em módulo, for maior que 1000, quer dizer que o usuário errou muito longe, ou seja, se for maior que 1000, ele digitou um número MUITO menor, e se for menor que -1000, digitou um número MUITO maior.
+***
+### Passo a passo para executar e testar o projeto:
+
+1. Baixe o repositório no seu computador.
+2. Abra o arquivo "index.html"  no seu navegador de escolha.
+3. Pronto!
 ***
