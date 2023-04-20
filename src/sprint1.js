@@ -33,7 +33,7 @@ while (1) {
         if (dif >= 1000) {  // intervalo de 1000 até 9999
             console.log("Muito maior...");
         }
-        else if (dif < 1000 && dif > 100) {    // intervalo de 999 até 100
+        else if (dif < 1000 && dif > 100) {    // intervalo de 999 até 101
             console.log("Maior...");
         }
         else {   // intervalo de 100 até 1
@@ -46,7 +46,7 @@ while (1) {
         if (dif <= -1000) { // intervalo de -1000 até -8999
             console.log("Muito menor...");
         }
-        else if (dif >= -1000 && dif < -100) {  // intervalo de -999 até -100
+        else if (dif >= -1000 && dif < -100) {  // intervalo de -999 até -101
             console.log("Menor...");
         }
         else { // intervalo de -100 até -1
