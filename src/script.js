@@ -4,7 +4,11 @@ let acertou=false;                                  //Variavel bool para marcar 
 console.log(`Pin sorteado aleatoriamente: ${pin}`); /*
                                                     Mostra no console do programador o PIN
                                                     que foi gerado aleatoriamente, com fim 
-                                                    de testar as funcionalidades 
+                                                    de testar as funcionalidades.
+                                                    Devido a ordem de prioridade das funcoes 
+                                                    prompt() e console.log(), as mensagens 
+                                                    do console aparecem apenas após o reload
+                                                    da página. 
                                                     */
 
 while(!acertou){                                    //Realiza o loop enquanto o usuário não acertar o PIN
