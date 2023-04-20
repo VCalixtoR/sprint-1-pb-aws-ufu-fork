@@ -1,53 +1,25 @@
-# Avaliação Sprint 1 - Programa de Bolsas Compass UOL / AWS e UFU
+# Avaliação Sprint 1 - Sistema de verificação de PIN
+**Autor: Paulo Diego S Souza**
 
-Avaliação da primeira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
+O sistema de verificação de PIN (Personal Identification Number) te ajuda na hora de inserir o seu código, te informa se o número que você está inserindo está um pouco maior, muito maior, um pouco menor ou muito menor do que aquele cadastrado, além de te parabenizar ao inseri-lo corretamente.
 
 ***
+## Desenvolvimento
 
+O sistema foi desenvolvido com base nas aulas de javascript da primeira sprint, fazendo uso de uma página HTML (index.html) para facilitar a inserção dos dados do usuário. Foram criadas duas funções, uma função value_check(pin,userPin,interval), mais generalista, que considera 3 valores numéricos e classifica o nível de proximidade de pin e userPin considerando o intervalo, retorna os códigos indicativos para cada análise. A segunda função é mais específica para a resolução da atividade e considera a configuração dos valores pin, interval, além da obtenção dos dados registrados na página index pelo usuário, além de imprir no local específico da marcação as mensagens que irão guiar o usuário para novas inserções. A página index.html importa o arquivo javascript que encontra-se dentro da pasta src. O principal desafio foi tentar não criar tanta complexidade para a tarefa objetiva solicitada.
+
+***
 ## Execução (Código Fonte)
 
-Faça um sistema em JavaScript para construção de um sistema de verificação de PIN (Personal Identification Number). O sistema contará com dicas se o usuário está colocando um número próximo, a maior ou menor que o correto.
+O sistema faz uso de um arquivo index.html que importa as funções do script.js contido na pasta src. O sistema espera a pré-definição dos valores de Pin e do intervalo para consideração o nível de proximidade com os valores que serão inseridos pelo usuário. O sistema está pré-configurado e pode ser utilizado ao clicar na página index.html, mas pode ser configurado de acordo com seu desejo.
 
-**Especificações**:
+**Passo a passo para configuração**:
 
-Passo a passo para iniciar o projeto:
-
-1. Clone o repositório.
-2. Crie a branch para subir seu código.
-2. Crie um arquivo para colocar seu programa JavaScript (.js).
-3. Desenvolva o código, que deverá conter as seguintes características:
-    - solicite ao usuário que insira um número;
-    - verifique se o número inserido é maior ou menor que o valor esperado;
-    - caso seja o valor correto, imprima na tela uma mensagem de parabéns;
-    - caso contrário, indique ao usuário se o próximo valor deve ser maior, muito maior, menor ou muito menor que o informado.
-4. Após testado na máquina local, suba os arquivos de código e o README no GitHub.
-5. Ao escrever o comentário do commit, utilize os Commits Semânticos: https://blog.geekhunter.com.br/o-que-e-commit-e-como-usar-commits-semanticos/ 
-
-*Dica: lembre de adicionar debug no seu código para ajudá-lo a identificar e corrigir erros.*
+1. Abra o arquivo script.js, na pasta src, em seu editor de texto de preferência.
+2. Na função pin_check, onde há a indicação de configuação-início, altere os valores do pin e defina o intervalo a ser considerado.
+3. Salve as alterações.
+4. Abra o arquivo index.html no navegador ou com clique duplo.
+5. Você está pronto para acertar o seu PIN!
 
 
-***
-
-## O que será avaliado?
-
-- Em JavaScript, conforme proposta
-- Seguir as atividades na ordem proposta
-- Organização geral do código fonte
-  - Estrutura de pastas
-  - Estrutura da logica de negócio
-  - Otimização do código fonte (evitar duplicações de código)
-- Objetividade do README.md
-
-***
-
-## Entrega
-
-- Aceitar o convite do repositório da sprint-1-pb-aws-ufu;
-- **O trabalho deve ser individual**;
-- Criar uma branch no repositório com o formato nome-sobrenome (Exemplo: daniel-muller);
-- Subir o trabalho na branch com um [Readme.md](README.md)
-  - documentar detalhes sobre como a avaliação foi desenvolvida
-  - dificuldades conhecidas
-  - como utilizar o sistema
-  - 🔨 código fonte desenvolvido (Sugestão: pasta `src`)
-- O prazo de entrega é até às 12h do dia 24/04/2023 no repositório do github ([https://github.com/Compass-pb-aws-2023-UFU/sprint-1-pb-aws-ufu](https://github.com/Compass-pb-aws-2023-UFU/sprint-1-pb-aws-ufu)).
+*Observação: Outros detalhes das funções estão documentados no código.*
