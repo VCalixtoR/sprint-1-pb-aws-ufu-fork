@@ -10,9 +10,16 @@ console.log(`Pin sorteado aleatoriamente: ${pin}`); /*
                                                     do console aparecem apenas após o reload
                                                     da página. 
                                                     */
-
+                                                   
 while(!acertou){                                    //Realiza o loop enquanto o usuário não acertar o PIN
-    let guess=prompt("Insira o PIN:");              //Pede ao usuario uma tentativa para o PIN
+    let guess=prompt("Insira o PIN de 4 dígitos:"); //Pede ao usuario uma tentativa para o PIN
+    guess=parseInt(guess);                          //Transforma a string inserida em number
+
+    if(isNaN(guess)){                               //Se nao for inserido um número, guess é NaN
+        alert("Tente novamente, digite um número válido.");
+        continue;
+    }
+
     let diferenca=getDifference(pin,guess);         //Armazena a diferença entre a tentativa e o PIN
 
     if(diferenca==0){                               //Se for 0 a diferença, o usuário acertou o pin
