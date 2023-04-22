@@ -2,51 +2,29 @@
 
 Avaliação da primeira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
 
+Projeto realizado por Ana Bárbara Campos Conti
 ***
 
-## Execução (Código Fonte)
+## Descrição do programa
 
-Faça um sistema em JavaScript para construção de um sistema de verificação de PIN (Personal Identification Number). O sistema contará com dicas se o usuário está colocando um número próximo, a maior ou menor que o correto.
+O programa gera um PIN aleatorio entre 0 e 10000, e o usuario deve por meio de tentativas acertar o PIN gerado. O programa pede para o usuário digitar um número e se ele acertar, mostra na tela uma mensagem de parabéns, caso nao seja o número gerado, o programa mostra mensagens falando se o usuário digitou um número maior, muito maior, menor ou muito menor.
 
-**Especificações**:
+## Como utilizar o sistema:
 
-Passo a passo para iniciar o projeto:
+- Baixe o repositorio no seu computador;
+- Abra o arquivo "index.html" em um navegador;
+- O programa mostrará um prompt onde você deverá digitar um número;
+- Continue digitando até aparecer uma mensagem mostrando que você acertou o número.
 
-1. Crie a branch para o seu grupo e efetue o clone.
-2. Crie um arquivo para colocar seu programa JavaScript (.js).
-3. Desenvolva o código, que deverá conter as seguintes características:
-    - solicite ao usuário que insira um número;
-    - verifique se o número inserido é maior ou menor que o valor esperado;
-    - caso seja o valor correto, imprima na tela uma mensagem de parabéns;
-    - caso contrário, indique ao usuário se o próximo valor deve ser maior, muito maior, menor ou muito menor que o informado.
-4. Após testado na máquina local, suba os arquivos de código e o README no GitHub.
-5. Ao escrever o comentário do commit, utilize os Commits Semânticos: https://blog.geekhunter.com.br/o-que-e-commit-e-como-usar-commits-semanticos/ 
+## Especificações do código
 
-*Dica: lembre de adicionar debug no seu código para ajudá-lo a identificar e corrigir erros.*
+- Primeiramente o programa gera um número natural aleátorio de 0 a 10000 e armazena ele na variável pin;
+- Ele mostra na tela de console esse número;
+- Depois por meio de um loop ele pede para o usuário digitar um número;
+- Ele verifica se oque foi digitado é um número e se é válido, caso contrário ele mostra uma mensagem de erro;
+- Se o número digitado for igual o PIN ele mostra uma mensagem de parabéns e sai do loop;
+- Caso contrário, ele faz a diferença desses dois valores;
+- Se a diferença for positiva, siginifica que o valor digitado é menor que o PIN então o usuario deverá digitar um valor muito maior se essa diferença for maior que 500, ou maior se for menor que 500;
+- Se a diferença for negativa, siginifica que o valor digitado é maior que o PIN então o usuario deverá digitar um valor muito menor se essa diferença for menor que -500, ou menor se for maior que -500;
+- O programa so sai do loop quando o usuário acertar o valor do PIN
 
-
-***
-
-## O que será avaliado?
-
-- Em JavaScript, conforme proposta
-- Seguir as atividades na ordem proposta
-- Organização geral do código fonte
-  - Estrutura de pastas
-  - Estrutura da logica de negócio
-  - Otimização do código fonte (evitar duplicações de código)
-- Objetividade do README.md
-
-***
-
-## Entrega
-
-- Aceitar o convite do repositório da sprint-1-pb-aws-ufu;
-- **O trabalho deve ser individual**;
-- Criar uma branch no repositório com o formato nome-sobrenome (Exemplo: daniel-muller);
-- Subir o trabalho na branch com um [Readme.md](README.md)
-  - documentar detalhes sobre como a avaliação foi desenvolvida
-  - dificuldades conhecidas
-  - como utilizar o sistema
-  - 🔨 código fonte desenvolvido (Sugestão: pasta `src`)
-- O prazo de entrega é até às 12h do dia 24/04/2023 no repositório do github ([https://github.com/Compass-pb-aws-2023-UFU/sprint-1-pb-aws-ufu](https://github.com/Compass-pb-aws-2023-UFU/sprint-1-pb-aws-ufu)).
