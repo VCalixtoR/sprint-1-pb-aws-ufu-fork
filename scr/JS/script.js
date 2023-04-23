@@ -1,6 +1,6 @@
 let raioDeProximidade = 0.15; //Raio de proximidade entre o valor digitado e o pin sorteado
-let tentativa = 0; // Variável para armazenar o valor inserido
 let numeroDeDigitos = 3; // Quantos dígitos deverá ter o PIN
+let tentativa = 0; // Variável para armazenar o valor inserido
 let pin = getPin(numeroDeDigitos); // Pin a ser advinhado
 let repeticao = true; // Controlador de repeticao da solicitação de pin
 
@@ -11,7 +11,7 @@ while(repeticao){
 
     switch( avaliacaoDoDado(tentativa, pin, raioDeProximidade, numeroDeDigitos) ){
         case 1:
-            alert("Parabéns, você acertou!!!\nO PIN era " + ("000" + pin).slice(-3));
+            alert("Parabéns, você acertou!!!\nO PIN era " + ("000000000" + pin).slice(-numeroDeDigitos));
             repeticao = false;
             break;
         case 2:
