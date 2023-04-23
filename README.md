@@ -1,53 +1,85 @@
 # Avaliação Sprint 1 - Programa de Bolsas Compass UOL / AWS e UFU
 
+<p align="justify">
 Avaliação da primeira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
+</p>
 
 ***
 
-## Execução (Código Fonte)
+## Descrição
 
-Faça um sistema em JavaScript para construção de um sistema de verificação de PIN (Personal Identification Number). O sistema contará com dicas se o usuário está colocando um número próximo, a maior ou menor que o correto.
+<p align="justify">
+A aplicação é um jogo no qual o usuário deve acertar um PIN gerado aleatoriamente no intervalo de 0 a 500. O programa pede um número no intervalo mencionado. Caso o número seja igual ao PIN, será mostrada uma mensagem parabenizando o usuário pelo acerto. Caso seja menor ou maior, também serão montradas mensagens informando que o número é muito menor, menor, maior ou muito maior do que o PIN.
+</p>
 
-**Especificações**:
+<p align="justify">
+Foram desenvolvidas duas versões do jogo. A primeira versão (contida na pasta version-001) contém apenas conhecimentos de JavaScript estudados durante a primeira sprint. A segunda versão (contida na pasta version-002) contém elementos mais avançados de JavaScript e também possui um arquivo CSS para alterar o estilo da página.
+</p>
 
-Passo a passo para iniciar o projeto:
-
-1. Clone o repositório.
-2. Crie a branch para subir seu código.
-2. Crie um arquivo para colocar seu programa JavaScript (.js).
-3. Desenvolva o código, que deverá conter as seguintes características:
-    - solicite ao usuário que insira um número;
-    - verifique se o número inserido é maior ou menor que o valor esperado;
-    - caso seja o valor correto, imprima na tela uma mensagem de parabéns;
-    - caso contrário, indique ao usuário se o próximo valor deve ser maior, muito maior, menor ou muito menor que o informado.
-4. Após testado na máquina local, suba os arquivos de código e o README no GitHub.
-5. Ao escrever o comentário do commit, utilize os Commits Semânticos: https://blog.geekhunter.com.br/o-que-e-commit-e-como-usar-commits-semanticos/ 
-
-*Dica: lembre de adicionar debug no seu código para ajudá-lo a identificar e corrigir erros.*
-
+**Obs: Ambas as versões possuem a mesma lógica de funcionamento.**
 
 ***
 
-## O que será avaliado?
+## Lógica do código
 
-- Em JavaScript, conforme proposta
-- Seguir as atividades na ordem proposta
-- Organização geral do código fonte
-  - Estrutura de pastas
-  - Estrutura da logica de negócio
-  - Otimização do código fonte (evitar duplicações de código)
-- Objetividade do README.md
+<p align="justify">
+Considere que o PIN gerado aleatóriamente seja igual a 300. Para a análise do número informado pelo usuário, utilizou-se a seguinte lógica:
+</p>
+
+- Se o usuário clicar em "Ok" com o campo vazio, será mostrada a mensagem "The field is empty!".
+- Se o número digitado for menor que 0 ou maior que 500, será mostrada a mensagem "The guess is out of range!".
+- Se o número for menor do que 270 (10% abaixo de 300), será mostrada a mensagem "The PIN is much bigger!".
+- Se o número for maior ou igual a 270 e menor que 300, será mostrada a mensagem "The PIN is bigger!".
+- Se o número for maior do que 330 (10% acima de 300), será mostrada a mensagem "The PIN is much smaller!".
+- Se o número for menor ou igual a 330 e maior que 300, será mostrada a mensagem "The PIN is smaller!".
+- Caso o usuário digite 300, será mostrada a mensagem "Congratulations! Reload the page to try again!".
 
 ***
 
-## Entrega
+## Como executar
 
-- Aceitar o convite do repositório da sprint-1-pb-aws-ufu;
-- **O trabalho deve ser individual**;
-- Criar uma branch no repositório com o formato nome-sobrenome (Exemplo: daniel-muller);
-- Subir o trabalho na branch com um [Readme.md](README.md)
-  - documentar detalhes sobre como a avaliação foi desenvolvida
-  - dificuldades conhecidas
-  - como utilizar o sistema
-  - 🔨 código fonte desenvolvido (Sugestão: pasta `src`)
-- O prazo de entrega é até às 12h do dia 24/04/2023 no repositório do github ([https://github.com/Compass-pb-aws-2023-UFU/sprint-1-pb-aws-ufu](https://github.com/Compass-pb-aws-2023-UFU/sprint-1-pb-aws-ufu)).
+<p align="justify">
+Para executar a versão simplificada (version-001) ou a versão completa do projeto (version-002), siga o passo-a-passo descrito abaixo:
+</p>
+
+1. Clone o repositório
+2. Abra a pasta "version-001" ou "version-002"
+3. Execute o arquivo "index.html" no navegador de sua preferência
+
+***
+
+## Exemplo de execução
+
+<p align="justify">
+Quando o arquivo "index.html" da versão simplificada é executado, a caixa de diálogo mostrada na Figura 1 é aberta.
+</p>
+
+</br>
+
+<p align="center">
+  <img src=./images/version-001.png width="50%">
+</p>
+
+<p align="center">
+Figura 1 - Execução da versão simplificada
+</p>
+
+</br>
+
+<p align="justify">
+Nela, o usuário informa o número que deseja tentar e clica em "Ok". De acordo com a lógica menciona na seção "Descrição", mensagens de alerta são mostradas informando se o usuário acertou ou se o número é maior ou menor do que o PIN.
+</p>
+
+<p align="justify">
+Para a versão completa, quando o arquivo "index.html" é executado, a página mostrada na Figura 2 é aberta.
+</p>
+
+</br>
+
+<p align="center">
+  <img src=./images/version-002.png width="50%">
+</p>
+
+<p align="center">
+Figura 2 - Execução da versão completa
+</p>
