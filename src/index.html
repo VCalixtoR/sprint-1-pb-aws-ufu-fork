@@ -8,16 +8,21 @@
     <meta http-equiv="content-language" content="en-us">
     <title>Pin Code Resolution</title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/app.js"></script>
   </head>
 
   <body>
-    <div>
-      <h1>Verify Your PIN Code</h1>
-      <div>
+    <div class="content-center-div">
+      <i class="title-glyphicon glyphicon glyphicon-cog"></i>
+      <h1>Verify your PIN code</h1>
+      <div class="pin-input-div">
         <label for="pin-input">PIN</label>
         <input id="pin-input" type="number"></input>
+      </div>
+      <div class="pin-info-div">
+        <span id="pin-check-info-span"></label>
       </div>
       <button id="verify-pin-button" type="button">Verify</button>
       <button id="change-pin-button" type="button">Change PIN</button>

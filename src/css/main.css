@@ -1,1 +1,74 @@
 /* CSS Styles */
+html, body {
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+body {
+  background-image: url("../img/background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 1.8em;
+  margin: 0px;
+  padding: 0px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+button {
+  font: inherit;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(128, 0, 128, 0.6);
+  color: white;
+  margin: 10px 20px;
+}
+button:hover {
+  background-color: rgba(128, 0, 128, 0.7);
+}
+label {
+  display: block;
+  text-align: left;
+  margin: 0px;
+}
+input {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: solid 2px rgba(128, 0, 128, 0.6);
+}
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+.content-center-div {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+.title-glyphicon{
+  font-size: 30px;
+  color: rgba(128, 0, 128, 0.6);
+  margin-bottom: 15px;
+}
+.pin-input-div, .pin-info-div {
+  display: inline-block;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+.pin-input-div{
+  width: 175px;
+}
+.pin-info-div{
+  width: 250px;
+}
