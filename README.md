@@ -6,6 +6,9 @@ Este repositório possui uma solução para a primeira avaliação do curso mach
 
 ## Início Rápido
 
+Para visualizar a aplicação disponibilizada na web acesse:
+* https://vc-compass-mlaws-1.netlify.app/
+
 Para executar o código localmente:
 1. Clone este repositório
 2. Faça um checkout para esta branch
@@ -18,11 +21,11 @@ O botão Change Pin atualiza o PIN internamente para se iniciar um novo processo
 
 ## Do Desenvolvimento da Atividade
 
-Inicialmente foram pesquisadas boas práticas para a definição da estrutura do projeto, como resultado, este projeto se baseia na arquitetura disponível para aplicações web html5-boilerplate. O repositório é mantido e atualizado por contribuintes do mundo todo por 10 anos com a finalidade de estabelecer uma estrutura inicial para criação de projetos WEB.
+Inicialmente foram pesquisadas boas práticas para a definição da estrutura do projeto, como resultado, a estrutura de pastas e nomenclatura de arquivos desta solução é baseada na arquitetura open-source para aplicações web html5-boilerplate, este repositório é mantido e atualizado por contribuintes do mundo todo por mais de 10 anos com a finalidade de estabelecer uma estrutura inicial para criação de projetos WEB profissionais contendo principais pastas, módulos e documentos.
 
 * [html5 boilerplate](https://github.com/h5bp/html5-boilerplate/)
 
-Para padronizar a nomenclatura html, css e o código JS foi utilizado um padrão não oficial definido por estudantes da Universidade de Washington.
+Para padronizar a nomenclatura html, css e o código JS foram utilizado padrões não oficiais definidos por estudantes da Universidade de Washington.
 
 * [CSE 154 — Unofficial Style Guide](https://courses.cs.washington.edu/courses/cse154/17au/styleguide/index.html)
 
@@ -30,4 +33,4 @@ Definido as padronizações, foi desenvolvido um esqueleto inicial do código qu
 
 Após a definição do esqueleto, para tornar a interface mais amigável, foram escolhidas e utilizadas imagens gratúitas como background e favicon e foram feitos refactorings no código js, html e css para mudar a integração js html.
 
-Por fim, este README foi criado e a branch foi enviada ao repositório remoto.
+Por fim, este README foi criado, modificado e a branch foi enviada ao repositório remoto.
