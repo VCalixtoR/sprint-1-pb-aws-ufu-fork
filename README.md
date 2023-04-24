@@ -34,3 +34,7 @@ Definido as padronizações, foi desenvolvido um esqueleto inicial do código qu
 Após a definição do esqueleto, para tornar a interface mais amigável, foram escolhidas e utilizadas imagens gratúitas como background e favicon e foram feitos refactorings no código js, html e css para mudar a integração js html.
 
 Por fim, este README foi criado, modificado e a branch foi enviada ao repositório remoto.
+
+## Da Solução da Atividade
+
+Embora a aplicação é desenvolvida em html css e js, toda a parte lógica de descoberta do PIN está feita em javascript no módulo app.js encontrado em src/js.

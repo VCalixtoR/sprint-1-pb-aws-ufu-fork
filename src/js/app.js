@@ -2,8 +2,8 @@
 let loadAppScope = (function() {
 
   // function scope consts and variables
-  const PIN_CODE_MAX_LENGTH = 8;
-  const PIN_CODE_MAX_N = Math.pow( 10, PIN_CODE_MAX_LENGTH - 1 );
+  const PIN_CODE_MAX_LENGTH = 4;
+  const PIN_CODE_MAX_N = Math.pow( 10, PIN_CODE_MAX_LENGTH ) - 1;
   let pinCode;
 
   // set event listeners and sets initial PIN
