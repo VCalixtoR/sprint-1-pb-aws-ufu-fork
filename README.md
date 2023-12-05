@@ -6,9 +6,6 @@ Este repositório possui uma solução para a primeira avaliação do curso mach
 
 ## Início Rápido
 
-Para visualizar a aplicação disponibilizada na web acesse:
-* https://vc-compass-mlaws-1.netlify.app/
-
 Para executar o código localmente:
 1. Clone este repositório
 2. Faça um checkout para esta branch
